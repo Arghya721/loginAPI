@@ -45,7 +45,8 @@ app.post('/register',(req,res)=>{
                 else{
                     res.json({
                         message: 'User created',
-                        user: user
+                        email: user.email,
+                        uid: user.uid
                     });
                 }
             });
